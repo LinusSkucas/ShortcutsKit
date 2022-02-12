@@ -1,0 +1,12 @@
+.DS_Store
+.build
+.nova
+Packages
+xcuserdata
+*.xcodeproj
+DerivedData/
+.DS_Store
+db.sqlite
+.swiftpm
+Package.pins
+Package.resolved
