@@ -1,5 +1,5 @@
 import Foundation
 
-public struct Shortcut {
+public struct Shortcut: ShortcutItem {
 	public var name: String
 }
