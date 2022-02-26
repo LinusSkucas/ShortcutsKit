@@ -8,5 +8,3 @@ DerivedData/
 .DS_Store
 db.sqlite
 .swiftpm
-Package.pins
-Package.resolved
