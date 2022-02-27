@@ -8,4 +8,11 @@ final class ShortcutsKitTests: XCTestCase {
 
         XCTAssertTrue(shortcuts.contains(Shortcut(name: "ShortcutsKit Tester")))
     }
+    
+    /// Test that ShortcutsKit is able to run shortcuts
+    func testRunningShortcut() {
+        let testShortcut = Shortcut(name: "ShortcutsKit Testesr")
+        
+        XCTAssertNoThrow(try Shortcuts.default.runShortcut(testShortcut))
+    }
 }

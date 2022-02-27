@@ -16,6 +16,14 @@ public struct Shortcuts {
 // 		return []
 // 	}
 
+	public func runShortcut(_ shortcut: Shortcut) throws {
+        let result = Commands.Bash.run("/usr/bin/shortcuts run \"\(shortcut.name)\"")
+
+        guard result.isSuccess else {
+            throw ShortcutsKitError.shortcutsCLIErrored(error: result.errorOutput)
+        }
+	}
+
 	/// The default singleton for the Shortcuts Object
 	public static var `default` = Shortcuts()
 
