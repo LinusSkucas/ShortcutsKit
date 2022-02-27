@@ -7,14 +7,14 @@ public struct Shortcuts {
 		return getAllShortcuts()
 	}
 
-	// All shortcuts, ordered in their folders
-	public var shortcutHierarchy: [ShortcutItem] {
-		return []
-	}
-
-	public func shortcutsForFolder(_ folderName: String) -> [Shortcut] {
-		return []
-	}
+// 	// All shortcuts, ordered in their folders
+// 	public var shortcutHierarchy: [ShortcutItem] {
+// 		return []
+// 	}
+//
+// 	public func shortcutsForFolder(_ folderName: String) -> [Shortcut] {
+// 		return []
+// 	}
 
 	/// The default singleton for the Shortcuts Object
 	public static var `default` = Shortcuts()
