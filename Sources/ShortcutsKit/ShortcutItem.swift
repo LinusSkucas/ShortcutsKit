@@ -1,5 +1,5 @@
 import Foundation
 
-protocol ShortcutItem {
+public protocol ShortcutItem {
 	var name: String { get }
 }
