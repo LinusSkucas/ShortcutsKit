@@ -1,0 +1,65 @@
+# This is a configuration file to customize code analysis by Sider.
+#
+# For more information, see the documentation:
+# https://help.sider.review/getting-started/custom-configuration
+
+# Customize each tool. If analyses fail, try adjusting each option referencing the following example.
+linter:
+
+#   # Misspell example. See https://help.sider.review/tools/others/misspell
+#   misspell:
+#     root_dir: project/
+#     target: [src/, test/]
+#     exclude: ["**/*.min.*"]
+#     locale: UK
+#     ignore: [center, behavior]
+
+#   # remark-lint example. See https://help.sider.review/tools/markdown/remark-lint
+#   remark_lint:
+#     root_dir: project/
+#     dependencies:
+#       - my-remark-plugin@2
+#     npm_install: false
+#     target: [docs/]
+#     ext: "md,markdown"
+#     rc-path: config/.remarkrc
+#     ignore-path: config/.remarkignore
+#     use:
+#       - remark-lint-file-extension
+#       - remark-lint-no-heading-punctuation
+
+#   # ShellCheck example. See https://help.sider.review/tools/shellscript/shellcheck
+#   shellcheck:
+#     root_dir: project/
+#     target:
+#       - "**/*.{sh,bash}"
+#       - shebang: true
+#     include: [SC2104, SC2105]
+#     exclude: [SC1000, SC1118]
+#     enable: all
+#     shell: bash
+#     severity: error
+#     norc: true
+
+#   # SwiftLint example. See https://help.sider.review/tools/swift/swiftlint
+#   swiftlint:
+#     root_dir: project/
+#     ignore_warnings: true
+#     target: [src/]
+#     config: config/.swiftlint.yml
+#     lenient: true
+#     enable-all-rules: true
+
+# Ignore specific files. Example:
+# ignore:
+#   - "*.pdf"
+#   - "*.mp4"
+#   - "*.min.*"
+#   - "images/**"
+
+# Exclude specific branches. Example:
+# branches:
+#   exclude:
+#     - master
+#     - development
+#     - /^release-.*$/
